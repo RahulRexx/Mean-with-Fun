@@ -1,4 +1,4 @@
 <h2>Post create</h2>
-<textarea [value]="'newPost'"></textarea>
-<button (click)="onAddPost()">Save Post</button>
+<textarea [value]="'newPost'" #postInput></textarea>
+<button (click)="onAddPost(postInput)">Save Post</button>
 <p>{{ newPost }}</p>
