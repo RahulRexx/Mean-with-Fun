@@ -1,4 +1,5 @@
 <h2>Post create</h2>
+<!-- Here we are refrencing input value to the postInput variable -->
 <textarea [value]="'newPost'" #postInput></textarea>
 <button (click)="onAddPost(postInput)">Save Post</button>
 <p>{{ newPost }}</p>
