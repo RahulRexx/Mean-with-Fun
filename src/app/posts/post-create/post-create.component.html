@@ -1,5 +1,9 @@
-<h2>Post create</h2>
-<!--two way binding ngModel is a directive -->
-<textarea [(ngModel)]="enteredValue"></textarea>
-<button (click)="onAddPost()">Save Post</button>
+<!-- <h2>Post create</h2> -->
+<mat-card>
+  <mat-form-field>
+    <mat-label> Post create </mat-label>
+    <input matInput placeholder="Hello" [(ngModel)]="enteredValue" >
+  </mat-form-field>
+  <button mat-raised-button color='accent' (click)="onAddPost()">Save Post</button>
+</mat-card>
 <p>{{ newPost }}</p>
