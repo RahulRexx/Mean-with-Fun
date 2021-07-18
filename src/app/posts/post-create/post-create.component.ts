@@ -6,7 +6,9 @@ import { Component } from '@angular/core';
 })
 export class PostCreateComponent {
   newPost = "No  content";  //property name
+  enteredValue = "";
   onAddPost() {
-    this.newPost = "New post"
+    // console.dir(postInput);
+    this.newPost = this.enteredValue;
   }
 }

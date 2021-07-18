@@ -1,4 +1,5 @@
 <h2>Post create</h2>
-<textarea [value]="'newPost'"></textarea>
+<!--two way binding ngModel is a directive -->
+<textarea [(ngModel)]="enteredValue"></textarea>
 <button (click)="onAddPost()">Save Post</button>
 <p>{{ newPost }}</p>
